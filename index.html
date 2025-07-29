@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak | Theoretical Physics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quantum_blog.css">
+
+
+</head>
+
+<body>
+    <div class="quantum-loader" id="loader">
+        <div class="loader-atom">
+            <div class="nucleus"></div>
+            <div class="electron-orbit">
+                <div class="electron"></div>
+            </div>
+            <div class="electron-orbit">
+                <div class="electron"></div>
+            </div>
+            <div class="electron-orbit">
+                <div class="electron"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div class="physics-background"></div>
+    <div class="physics-particles" id="particleSystem"></div>
+    <div class="floating-equations" id="equationSystem"></div>
+
+    <header id="header">
+        <nav>
+            <a href="#" class="logo" data-section="home">HOME</a>
+            <ul class="nav-links">
+                <li><a href="projects_section/projects_main.html" data-section="projects">Projects</a></li>
+                <li><a href="skills_section/skills_main.html" data-section="skills">Skills</a></li>
+                <li><a href="blogs_section/blogs_main.html">Blogs</a></li>
+                <li><a href="coursework_section/coursework_main.html data-section=" coursework">Coursework</a></li>
+                <li><a href="contact_section/contact_main.html" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="home-content" class="content-section active-section">
+            <section class="hero reveal">
+                <h1>Ronak Singh Raina</h1>
+                <h2>Theoretical Physics Enthusiast</h2>
+                <p class="subtitle">Exploring the fundamental nature of reality through quantum mechanics, relativity,
+                    and computational physics</p>
+            </section>
+            <div class="scroll-down-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            
+            <section class="profile-bio-section reveal">
+                <div class="bio-content">
+                    <h2>About Me</h2>
+                    <div class="bio-text">
+                        <p>I'm a passionate theoretical physics student at IISER Thiruvananthapuram, dedicated to
+                            unraveling the mysteries of the universe through mathematical elegance and computational
+                            power.</p>
+                        <p>My research interests span quantum field theory, general relativity, and statistical
+                            mechanics. I believe that the most profound truths about reality are written in the language
+                            of mathematics.</p>
+                        <p>When I'm not deriving equations or running simulations, you'll find me exploring the
+                            philosophical implications of quantum mechanics and contemplating the nature of spacetime.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="profile-side">
+                    <div class="profile-container">
+                        <div class="profile-rings">
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                            <div class="ring"></div>
+                        </div>
+                        <img src="pic.png" alt="Ronak" class="profile-img">
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="quantum-grid reveal">
+                <div class="quantum-card" data-section-link="projects">
+                    <div class="card-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Projects</h3>
+                    <p>Dive into simulations of quantum tunneling, wave-particle duality, and computational models of
+                        fundamental physics phenomena.</p>
+                </div>
+                <div class="quantum-card" data-section-link="skills">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Research Skills</h3>
+                    <p>Theoretical frameworks, computational methods, and mathematical tools for exploring the mysteries
+                        of the universe.</p>
+                </div>
+                <div class="quantum-card" data-section-link="blog">
+                    <div class="card-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>Blog and Insights</h3>
+                    <p>Insights into cutting-edge physics research, from quantum field theory to cosmology and
+                        everything in between.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- <section id="projects-section" class="content-section page-container">
+            <div class="page-hero">
+                <h1 class="page-title"><i class="fas fa-rocket glow-icon"></i> Projects & Research</h1>
+                <p class="page-subtitle">Exploring the universe through computational simulations and theoretical investigations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card"><div class="project-icon"><i class="fas fa-atom"></i></div><h3>Quantum Tunneling Simulation</h3><p>Numerical simulation of a wave packet interacting with a potential barrier to showcase the quantum tunneling effect using the time-dependent Schrödinger equation.</p><div class="project-tags"><span class="tag">Python</span><span class="tag secondary">NumPy</span><span class="tag tertiary">Quantum Mechanics</span></div></div>
+                <div class="project-card"><div class="project-icon"><i class="fas fa-infinity"></i></div><h3>Geodesic Equation Derivation</h3><p>A comprehensive mathematical paper deriving the geodesic equation in general relativity from the principle of least action and exploring its physical implications.</p><div class="project-tags"><span class="tag secondary">General Relativity</span><span class="tag">LaTeX</span><span class="tag tertiary">Differential Geometry</span></div></div>
+                <div class="project-card"><div class="project-icon"><i class="fas fa-cubes"></i></div><h3>2D Ising Model Analysis</h3><p>Computational study of phase transitions in the 2D Ising model using the Metropolis-Hastings algorithm to investigate critical temperature and magnetic susceptibility.</p><div class="project-tags"><span class="tag tertiary">Statistical Mechanics</span><span class="tag">Monte Carlo</span><span class="tag secondary">C++</span></div></div>
+                <div class="project-card"><div class="project-icon"><i class="fas fa-wave-square"></i></div><h3>Wave-Particle Duality Visualization</h3><p>Interactive simulation demonstrating the double-slit experiment and wave-particle duality, showcasing quantum superposition and measurement effects.</p><div class="project-tags"><span class="tag">Quantum Physics</span><span class="tag tertiary">Visualization</span><span class="tag secondary">JavaScript</span></div></div>
+            </div>
+        </section>
+
+        <section id="skills-section" class="content-section page-container">
+            <div class="page-hero"><h1 class="page-title"><i class="fas fa-brain glow-icon"></i> Skills & Expertise</h1><p class="page-subtitle">Theoretical frameworks, computational methods, and research capabilities</p></div>
+            <div class="skills-grid">
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-atom"></i></div><h3>Theoretical Physics</h3><ul class="skill-list"><li>Lagrangian & Hamiltonian Mechanics</li><li>Quantum Field Theory (Introductory)</li><li>Differential Geometry & Tensors</li><li>Statistical Mechanics & Thermodynamics</li><li>General Relativity</li><li>Electrodynamics & Maxwell Equations</li></ul></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-laptop-code"></i></div><h3>Computational Tools</h3><ul class="skill-list"><li>Python (NumPy, SciPy, Matplotlib)</li><li>LaTeX & Scientific Writing</li><li>Mathematica & Symbolic Computation</li><li>C++ for Numerical Simulations</li><li>MATLAB for Data Analysis</li><li>Git Version Control</li><li>Machine Learning</li></ul></div>
+                <div class="skill-card"><div class="skill-icon"><i class="fas fa-users"></i></div><h3>Research Skills</h3><ul class="skill-list"><li>Mathematical Problem Solving</li><li>Scientific Communication</li><li>Research Methodology</li><li>Data Analysis & Visualization</li><li>Collaborative Research</li><li>Critical Thinking & Analysis</li></ul></div>
+            </div>
+        </section>
+
+        
+
+        <section id="coursework-section" class="content-section page-container">
+            <div class="page-hero"><h1 class="page-title"><i class="fas fa-graduation-cap glow-icon"></i> Academic Coursework</h1><p class="page-subtitle">Relevant courses shaping my understanding of theoretical physics and mathematics</p></div>
+            <div class="coursework-container">
+                <div class="academic-info"><h3><i class="fas fa-university"></i> IISER Thiruvananthapuram</h3><p>Bachelor of Science in Physics (BS-MS Dual Degree Program)</p><p>Specialization in Theoretical Physics</p><span class="gpa-highlight">Current GPA: 3.9/4.0</span></div>
+                <div class="coursework-grid">
+                    <div class="course-tag">Quantum Mechanics I & II</div><div class="course-tag">Mathematical Methods in Physics</div><div class="course-tag">Classical Mechanics</div><div class="course-tag">Statistical Physics</div><div class="course-tag">General Relativity</div><div class="course-tag">Electrodynamics</div><div class="course-tag">Linear Algebra</div><div class="course-tag">Differential Equations</div><div class="course-tag">Complex Analysis</div><div class="course-tag">Thermodynamics</div><div class="course-tag">Solid State Physics</div><div class="course-tag">Nuclear & Particle Physics</div><div class="course-tag">Computational Physics</div><div class="course-tag">Group Theory</div><div class="course-tag">Advanced Quantum Mechanics</div><div class="course-tag">Field Theory</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="content-section page-container">
+    <div class="page-hero">
+        <h1 class="page-title"><i class="fas fa-envelope-open-text glow-icon"></i> Get In Touch</h1>
+        <p class="page-subtitle">I'm always open to discussing physics, research collaborations, or new ideas. Feel free to reach out.</p>
+    </div>
+
+    <div class="contact-wrapper">
+        <div class="contact-form-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="contact-submit-button">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info-container">
+            <h3>Contact Details</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Jammu, Jammu & Kashmir, India</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ronak23@iisertvm.ac.in">ronak23@iisertvm.ac.in</a>
+            </div>
+            
+            <h3 class="info-heading">Professional Profiles</h3>
+            <div class="info-social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fas fa-book-open"></i> arXiv</a>
+            </div>
+        </div>
+    </div>
+</section>
+     -->
+    </main>
+
+    <footer class="reveal">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="mailto:ronak23@iisertvm.ac.in"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Ronak.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
