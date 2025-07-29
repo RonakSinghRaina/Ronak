@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coursework | Ronak</title>
+     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+     <div class="quantum-loader" id="loader">
+        <div class="loader-atom">
+            <div class="nucleus"></div>
+            <div class="electron-orbit"><div class="electron"></div></div>
+            <div class="electron-orbit"><div class="electron"></div></div>
+            <div class="electron-orbit"><div class="electron"></div></div>
+        </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <div class="physics-background"></div>
+    <div class="physics-particles" id="particleSystem"></div>
+    <div class="floating-equations" id="equationSystem"></div>
+   <header id="header">
+    <nav>
+        <a href="../index.html" class="logo">HOME</a>
+
+        <ul class="nav-links">
+            <li><a href="../projects_section/projects_main.html">Projects</a></li>
+            <li><a href="../skills_section/skills_main.html">Skills</a></li>
+            <li><a href="../blogs_section/blogs_main.html">Blog</a></li>
+            <li><a href="../coursework_section/coursework_main.html">Coursework</a></li>
+            <li><a href="../contact_section/contact_main.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <main class="page-container">
+        <div class="page-hero"><h1 class="page-title"><i class="fas fa-graduation-cap glow-icon"></i> Academic Coursework</h1><p class="page-subtitle">Relevant courses shaping my understanding of theoretical physics and mathematics</p></div>
+        <div class="coursework-container">
+            <div class="academic-info"><h3><i class="fas fa-university"></i> IISER Thiruvananthapuram</h3><p>Bachelor of Science in Physics (BS-MS Dual Degree Program)</p><p>Specialization in Theoretical Physics</p><span class="gpa-highlight">Current GPA: 3.9/4.0</span></div>
+            <div class="coursework-grid">
+                <div class="course-tag">Quantum Mechanics I & II</div><div class="course-tag">Mathematical Methods in Physics</div><div class="course-tag">Classical Mechanics</div><div class="course-tag">Statistical Physics</div><div class="course-tag">General Relativity</div><div class="course-tag">Electrodynamics</div><div class="course-tag">Linear Algebra</div><div class="course-tag">Differential Equations</div><div class="course-tag">Complex Analysis</div><div class="course-tag">Thermodynamics</div><div class="course-tag">Solid State Physics</div><div class="course-tag">Nuclear & Particle Physics</div><div class="course-tag">Computational Physics</div><div class="course-tag">Group Theory</div><div class="course-tag">Advanced Quantum Mechanics</div><div class="course-tag">Field Theory</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content"><p>&copy; 2025 Ronak.</p></div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
