@@ -312,21 +312,36 @@ nav {
     filter: drop-shadow(0 0 40px rgba(255, 0, 128, 0.3));
   }
 }
+/* --- Typing Animation for Subtitle --- */
+
 .subtitle {
-  font-size: 1.8rem; /* You can adjust this size */
+  font-size: 1.2rem; /* Adjusted for the longer sentence */
   color: var(--text-secondary);
-  font-family: "JetBrains Mono", monospace; /* A monospace font looks best for typing effects */
-
+  font-family: 'JetBrains Mono', monospace;
+  
   /* Properties for the typing effect */
-  display: inline-block; /* Allows us to animate the width */
-  overflow: hidden; /* Hides the text that hasn't been "typed" yet */
-  white-space: nowrap; /* Keeps the text on a single line */
-  border-right: 3px solid var(--accent-primary); /* This is the typing cursor */
-  width: 0; /* Start with zero width */
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--accent-primary);
+  width: 0;
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
 
-  /* Apply the animations: 1. Typing the text 2. Blinking the cursor */
-  animation: typing 8s steps(120,end) forwards,
-    blink-caret 0.75s step-end infinite;
+  /* Apply the UPDATED animation */
+  animation: 
+    typing 8s steps(120, end) forwards, /* Changed from 3s and 35 steps */
+    blink-caret .75s step-end infinite;
+}
+
+/* These keyframes can remain the same */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-primary); }
 }
 
 /* Animation keyframes for the typing effect */
