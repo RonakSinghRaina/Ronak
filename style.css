@@ -325,7 +325,7 @@ nav {
   width: 0; /* Start with zero width */
 
   /* Apply the animations: 1. Typing the text 2. Blinking the cursor */
-  animation: typing 3s steps(35, end) forwards,
+  animation: typing 8s steps(120,end) forwards,
     blink-caret 0.75s step-end infinite;
 }
 
